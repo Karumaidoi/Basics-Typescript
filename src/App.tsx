@@ -1,8 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { useGetData } from "./hooks/useGetData";
 
 function App() {
+  const { newData, isLoading, error } = useGetData();
+  console.log(newData, isLoading, error);
+
   return (
     <div className="App">
       <header className="App-header">
