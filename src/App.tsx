@@ -14,6 +14,8 @@ function App() {
           country={"kenya"}
           region={"africa"}
           roles={["admin", "user"]}
+          variant={{ name: "Alex" }}
+          isLoading={false}
         />
       </header>
     </div>
